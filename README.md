@@ -43,8 +43,9 @@ This project is a RESTful API built with Java and Spring Boot that connects to a
 ```
 
 3. Run with Maven:
-   ```mvn spring-boot:run
-  ```
+   ```
+   mvn spring-boot:run
+  
 The API will be available at http://localhost:8080.
 
 🔒 Security
