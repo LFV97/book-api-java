@@ -1,0 +1,19 @@
+# Evita subir archivos sensibles o generados automáticamente
+.env
+*.log
+*.class
+*.jar
+*.war
+*.iml
+*.yml
+target/
+.idea/
+*.db
+.vscode/
+logs/
+*.iws
+.DS_Store
+.settings/
+.project
+.classpath
+*.swp

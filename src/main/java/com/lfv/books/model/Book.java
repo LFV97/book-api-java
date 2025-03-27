@@ -1,22 +1,40 @@
 package com.lfv.books.model;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
-@Entity
+@Entity(name = "books_java")
 public class Book {
     @Id
-    public int id;
+    public Long id;
     public String title;
     public String author;
     public String description;
     public String image;
     public String backImage;
     public String link;
+    public double price;
+    public int pages;
+    public String category;
 
+    public Book(){}
 
-    public int getId() {
+    public Book(Long id, String title, String author, String description, String image, String backImage, String link, double price, int pages, String category) {
+        this.id = id;
+        this.title = title;
+        this.author = author;
+        this.description = description;
+        this.image = image;
+        this.backImage = backImage;
+        this.link = link;
+        this.price = price;
+        this.pages = pages;
+        this.category = category;
+    }
+
+    public Long getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public String getTitle() {
@@ -54,5 +72,29 @@ public class Book {
     }
     public void setLink(String link) {
         this.link = link;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }
